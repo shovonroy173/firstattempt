@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CATALOGUE</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: aqua;
+    background-attachment: fixed;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 420px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 25px 0 black;
+    transition: 1s;
+}
+#shawn:hover{
+    box-shadow: 15px 15px 0 0 black;
+}
+
+.container .card .circle{
+    position: relative;
+    width:100% ;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    clip-path: circle(180px at center 0 );
+    text-align: center;
+}
+#pera{
+    background-color: crimson;
+}
+#pera-2{
+    background-color: rgb(235, 82, 27);
+}
+
+.container .card .circle h2{
+    color: white;
+    font-size: 3em;
+    padding: 30px 0;
+}
+
+.container .card .content{
+    position: absolute;
+    bottom: 10px;
+    page-break-after: 20px;
+    text-align: center;
+}
+
+.container .card .content p{
+    color: rgb(138, 138, 223);
+    margin-bottom: 10px;
+
+}
+
+.container .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px ;
+    background-color: rgb(153, 51, 51);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="shawn">
+            <div class="circle" id="pera">
+                <h2>01</h2>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sunt deleniti officiis rerum eaque excepturi odio magni commodi sint, recusandae facere esse accusantium asperiores magnam eius earum minima porro. Tempora.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="card" id="shawn">
+            <div class="circle" id="pera-2">
+                <h2>02</h2>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sunt deleniti officiis rerum eaque excepturi odio magni commodi sint, recusandae facere esse accusantium asperiores magnam eius earum minima porro. Tempora.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="card" id="shawn">
+            <div class="circle" id="pera">
+                <h2>03</h2>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sunt deleniti officiis rerum eaque excepturi odio magni commodi sint, recusandae facere esse accusantium asperiores magnam eius earum minima porro. Tempora.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="card" id="shawn">
+            <div class="circle" id="pera-2">
+                <h2>04</h2>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sunt deleniti officiis rerum eaque excepturi odio magni commodi sint, recusandae facere esse accusantium asperiores magnam eius earum minima porro. Tempora.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
